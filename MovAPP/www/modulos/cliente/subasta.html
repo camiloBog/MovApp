@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    	
+    	<script src="js/jquery-2.0.1.min.js"></script>
+    	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+        <title>MovApp</title>
+    </head>
+    <body>
+
+		<div data-role="page" id="formSubastaClient" data-theme="a">
+			<div data-role="header" data-theme="a">
+				<a href="../index.html" id="formSubastaClientButtonBack" data-rel="back" 
+					class="ui-btn ui-icon-back ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"></a>
+				<h1>Crear Subasta</h1>
+			</div>
+			<div data-role="content">
+			
+				
+			
+				<div class="ui-field-contain">
+					<label for="formSubastClientDescri">Descripción</label>
+					<textarea name="formSubastClientDescri" id="formSubastClientDescri" maxlength="4000"
+						placeholder="Escribe una descripcion detallada del servicio." ></textarea>
+				</div>
+				
+				<label for="formSubastClientFecha">Fecha:</label>
+				<input name="formSubastClientFecha" id="formSubastClientFecha" data-clear-btn="true" data-mini="true" value="" placeholder="dd-mm-aa" pattern="dd-mm-aa" required="true" type="text"/>
+				
+				<div class="ui-field-contain">
+					<label for="formSubastClientHora">Hora:</label>
+					<input name="formSubastClientHora" id="formSubastClientHora" data-clear-btn="true" data-mini="true" value="" placeholder="hh:mm" pattern="hh:mm" required="true" type="text"/>
+				</div>
+				
+				<label for="formSubastClientBienes">Bienes a transportar:</label>
+				<select name="formSubastClientBienes" id="formSubastClientBienes" data-mini="true" data-theme="b">
+					<option value="0" selected="selected">Selecciona un tipo de mercancia</option>
+					<option value="1">Menaje</option>
+					<option value="2">Mercancia</option>
+					<option value="3">Mercancias Peligrosas</option>
+					<option value="4">Otra</option>
+				</select>
+				
+				
+				<label for="formSubastClientVehiculo">Tipo de vehiculo:</label>
+				<select name="formSubastClientVehiculo" id="formSubastClientVehiculo" data-mini="true" data-theme="b">
+					<option value="0" selected="selected">Selecciona el tipo de vehiculo</option>
+					<option value="1">Automovil</option>
+					<option value="2">Camioneta</option>
+					<option value="3">Turbo</option>
+					<option value="4">Sencillo</option>
+					<option value="5">Doble Troque</option>
+					<option value="6">Cuatro Manos</option>
+					<option value="7">Mini Mula</option>
+					<option value="8">Tracto Mula 2 Troques</option>
+					<option value="9">Tracto Mula 3 Troques</option>
+					<option value="10">Otro</option>					
+				</select>
+			
+				<label for="formSubastClientLocalidadOrig">Localidad Origen:</label>
+				<select name="formSubastClientLocalidad" id="formSubastClientLocalidadOrig" data-mini="true" data-theme="b">
+					<option value="0" selected="selected">Selecciona una localidad</option>
+					<option value="15">Antonio Nariño</option>
+					<option value="12">Barrios Unidos</option>
+					<option value="7">Bosa</option>
+					<option value="2">Chapinero</option>
+					<option value="19">Ciudad Bolívar</option>
+					<option value="10">Engativá</option>
+					<option value="9">Fontibón</option>
+					<option value="8">Kennedy</option>
+					<option value="17">La Candelaria</option>
+					<option value="14">Los Mártires</option>
+					<option value="16">Puente Aranda</option>
+					<option value="18">Rafael Uribe Uribe</option>
+					<option value="4">San Cristóbal</option>
+					<option value="3">Santa Fe</option>
+					<option value="11">Suba</option>
+					<option value="20">Sumapaz</option>
+					<option value="13">Teusaquillo</option>
+					<option value="6">Tunjuelito</option>
+					<option value="1">Usaquén</option>
+					<option value="5">Usme</option>
+				</select>
+				
+				<label for="name">Barrio Origen</label>
+				<input name="name" id="formSubastaClientBarrioOrigen" data-clear-btn="true" data-mini="true" value="" placeholder="Barrio de destino" maxlength="40" required="true" type="text"/>
+				
+				<label for="name">Direccion de Origen</label>
+				<input name="name" id="formSubastaClientDirOrigen" data-clear-btn="true" data-mini="true" value="" placeholder="Direccion de destino" maxlength="40" required="true" type="text"/>
+				
+				<label for="formSubastClientLocalidadDest">Localidad Destino:</label>
+				<select name="formSubastClientLocalidad" id="formSubastClientLocalidadDest" data-mini="true" data-theme="b">
+					<option value="0" selected="selected">Selecciona una localidad</option>
+					<option value="15">Antonio Nariño</option>
+					<option value="12">Barrios Unidos</option>
+					<option value="7">Bosa</option>
+					<option value="2">Chapinero</option>
+					<option value="19">Ciudad Bolívar</option>
+					<option value="10">Engativá</option>
+					<option value="9">Fontibón</option>
+					<option value="8">Kennedy</option>
+					<option value="17">La Candelaria</option>
+					<option value="14">Los Mártires</option>
+					<option value="16">Puente Aranda</option>
+					<option value="18">Rafael Uribe Uribe</option>
+					<option value="4">San Cristóbal</option>
+					<option value="3">Santa Fe</option>
+					<option value="11">Suba</option>
+					<option value="20">Sumapaz</option>
+					<option value="13">Teusaquillo</option>
+					<option value="6">Tunjuelito</option>
+					<option value="1">Usaquén</option>
+					<option value="5">Usme</option>
+				</select>
+				
+				<label for="name">Barrio Destino</label>
+				<input name="name" id="formSubastaClientBarrioDestino" data-clear-btn="true" data-mini="true" value="" placeholder="Barrio de origen" maxlength="40" required="true" type="text"/>
+				
+				<label for="name">Direccion Destino</label>
+				<input name="name" id="formSubastaClientDirDestino" data-clear-btn="true" data-mini="true" value="" placeholder="Direccion de origen" maxlength="40" required="true" type="text"/>
+
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="./resumen.html" id="formSubastaClientGenerar">Generar Subasta</a>
+				
+				<!--
+				<div class="ui-input-btn ui-btn ui-icon-arrow-r ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"> 
+					Registrarse
+					<input data-enhanced="true" type="submit" value="Registrarse" id="formSubastaClientButtonLog"/>
+				</div>
+				-->
+				
+				
+				
+			</div>
+		</div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+	
+    </body>
+</html>

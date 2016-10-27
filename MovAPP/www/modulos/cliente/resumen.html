@@ -15,19 +15,31 @@
     </head>
     <body>
     
-    	<div data-role="page" id="preform" data-theme="a">
+    	<div data-role="page" id="resumenPage" data-theme="a">
 			<div data-role="header" data-theme="a">
-				<a href="../index.html" id="preformButtonBack" data-rel="back" 
+				<a href="../index.html" id="resumenPageButtonBack" data-rel="back" 
 					class="ui-btn ui-icon-back ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"></a>
-				<h1>MovApp</h1>
+				<h1>Subasta</h1>
 			</div>
 			<div data-role="content">
-				<p><h1>...Elije el perfil que deseas tener...</h1></p>
-				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all  ui-btn-b"
-					href="./formularioCliente.html" id="preformClientButton">Cliente</a>
-				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all  ui-btn-b"
-					href="./formularioTransportador.html" id="preformTranspButton">Transportador</a>
+				<p><h1>Felicitaciones, haz creado la siguiente subasta...</h1></p>
 			</div>
+			
+			<div data-role="content">
+				<p id="resumenPagefecha" >Fecha: 12-Octubre-2016, 13:50</p>
+				<p id="resumenPageOrigen" >Origen: Bosa, El recreo, Cll 46S # 103bis-2</p>
+				<p id="resumenPageDestino" >Destino: Kennedy, Catania, Cll 6B # 83-24</p>
+				<p id="resumenPageCaract" >Caracteristicas: Furgon, Menaje</p>
+				<p id="resumenPageDescri" >Descripcion: Se requiere transporte para tres camas, un comedor pequeño y cinco cajas de carton.</p>
+			</div>
+			
+			<div data-role="content">
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="./accionCliente.html" id="resumenPageHomeButton">Home</a>
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="./verSubastas.html" id="resumenPageVerButton">Ver Subastas</a>
+			</div>
+			
 		</div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
