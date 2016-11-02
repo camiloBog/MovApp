@@ -15,30 +15,22 @@
     </head>
     <body>
     
-    	<div data-role="page" id="index" data-theme="a">
+    	<div data-role="page" id="accionTranspForm" data-theme="a">
 			<div data-role="header" data-theme="a">
+				<a href="../index.html" id="accionTranspFormButtonBack" data-rel="back" 
+					class="ui-btn ui-icon-back ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"></a>
 				<h1>MovApp</h1>
 			</div>
 			<div data-role="content">
-				<br><br>
+				<p><h1>Sr. Transportador, por favor elija una accion...</h1></p><br><br>
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="./verSubastas.html" id="accionTranspFormTranspButton">Ver Subastas Activas</a>
 				
-				<center>
-					<img id="image-1" alt="" src="img/logoColor.png"
-						width="250" height="110"/>
-				</center>
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="./verPostulaciones.html" id="accionTranspFormClientButton">Ver Postulaciones</a>
 				
-				<br><br>
-				<div>
-					<center><h1>MovApp</h1></center>
-				</div>
-				<br><br>
-				<div>
-					<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
-					href="./modulos/registro/preFormulario.html" id="indexRegButton">Registrarse</a>
-					<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
-						href="./modulos/login/login.html" id="indexLogButton">Ingresar</a>
-				</div>
-				
+				<a class="ui-btn ui-icon-action ui-btn-icon-left ui-mini ui-corner-all ui-btn-b"
+					href="../../index.html" id="accionTranspFormTranspButton">Salir</a>
 			</div>
 		</div>
         <script type="text/javascript" src="cordova.js"></script>
